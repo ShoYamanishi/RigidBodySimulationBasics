@@ -1,5 +1,6 @@
 # RigidBodySimulationBasics
-Sample programs accompanying to the blog articles on Medium.
+Sample programs accompanying to [the blog articles on Medium](https://medium.com/@e92rodbearings/rigid-body-simulation-basics-part-1-from-newtons-law-to-a-constrained-optimization-problem-fc3b2148ad5d).
+
 It demonstrates how the velocity-space constraint-based physics simulation works for the 2-dimensional linear motions.
 
 <a href="pics/ios_capture.png"> <img src="pics/ios_capture.png" alt="basis order 0" style="width: 200px;" /></a>
