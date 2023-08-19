@@ -1,13 +1,13 @@
 # RigidBodySimulationBasics
 Sample programs accompanying to the blog articles on Medium.
-It demonstrates how the velocity-space constraint-based physics simulation works for 2-dimensional linear motions.
+It demonstrates how the velocity-space constraint-based physics simulation works for the 2-dimensional linear motions.
 
 <a href="pics/ios_capture.png"> <img src="pics/ios_capture.png" alt="basis order 0" style="width: 200px;" /></a>
 <a href="pics/linux_capture.png"> <img src="pics/linux_capture.png" alt="basis order 0" style="width: 600px;" /></a>
 
 # Supported Environments
  
-* Linux (tested on Ubuntu 22.04.3 & Intel Core i5/Intel 640)
+* Linux (tested on Ubuntu 22.04.3 & Intel Core i5/Intel 640, actually an old MacbookPro)
 
 * iOS (tested on iPhone 13 mini & iOS 16.6)
 
@@ -16,7 +16,7 @@ It demonstrates how the velocity-space constraint-based physics simulation works
 ## Prerequisites.
 [GLM](https://glm.g-truc.net/0.9.9/), 
 [GLEW](https://glew.sourceforge.net), 
-and [GLFW](https://www.glfw.org), and their dependet packages must be installed.
+and [GLFW](https://www.glfw.org), and their dependent packages must be installed.
 
 Following is a sample installation process tested on Ubuntu 22.04.3.
 ```
@@ -44,7 +44,7 @@ $ sudo apt install libglfw3-dev
 It works for Macos at the time of writing (Aug 2023) with the following extra step for GLFW.
 The [GLM](https://formulae.brew.sh/formula/glm) and [GLEW](https://formulae.brew.sh/formula/glew#default)
 can be installed by Homebrew.
-However, GLFW installed by Homebew does not seem to work, and I had to manually build it.
+However, GLFW installed by Homebew does not seem to work for me, and I had to manually build it.
 Following is the instruction I followed.
 
 ```
@@ -73,20 +73,20 @@ $ ./sample_app_01
 
 ## Installation for iOS
 
-Plug-in an iOS device to your Mac,
+Plug an iOS device in to your Mac,
 open [SampleApp01.xcodeproj](SampleApp01/SampleApp01.xcodeproj/) with XCode, build, and run.
 It's been tesetd on Mac mini M1 2020, Ventura 13.5, and XCode 14.3.1.
 
 # Usage
 
-On iOS App, tile the device to let the balls roll according to the gravity.
+On iOS App, tilt the device to let the balls roll according to the gravity.
 On Linux, the location of the cursor relative to the center of the window defines the gravity applied to the balls.
 The 7 small balls are linked together like a chain. The slider *Torsional Spring Strengh* controls the forces applied to the 7 balls, which makes the chain act like a pool noodle.
 On Linux the strengh is controled by the arrow keys.
 
 
 # License
-GPL V3
+GPL v3
 
 # Contact
 Shoichiro Yamanishi ( e92rodbearings @ gmail . com )
