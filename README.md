@@ -46,6 +46,7 @@ It works for Macos at the time of writing (Aug 2023) with the following extra st
 The [GLM](https://formulae.brew.sh/formula/glm) and [GLEW](https://formulae.brew.sh/formula/glew#default)
 can be installed by Homebrew.
 However, GLFW installed by Homebew does not seem to work for me, and I had to manually build it.
+(The glfwCreateWindow() returns nullptr when it is linked with Homebrew's glfw library.)
 Following is the instruction I followed.
 
 ```
@@ -55,7 +56,8 @@ $ cd glfw
 $ mkdir build
 $ cd build
 $ cmake .. 2>&1 | tee cmake_console_out.txt
-$ make VERBOSE=1 2>&1 | tee make.log
+$ VERBOSE=1 make 2>&1 | tee make.log
+$ VERBOSE=1 sudo make install 2>&1 | tee make_install.log
 
 ```
 The [CMakeLists.txt](SampleApp01/SampleApp01/LinuxOpenGL/CMakeLists.txt) assumes this locally built GLFW for Macos.
